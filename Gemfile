@@ -30,6 +30,8 @@ group :development do
   gem 'terminal-notifier-guard'
 
   gem 'hubrelease'
+
+  gem 'stove'
 end
 
 group :travis do
