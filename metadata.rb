@@ -15,7 +15,7 @@ depends 'apt'
 
 supports "ubuntu", ">= 12.04", "<= 15.04"
 supports "debian", ">= 7.0", "<= 7.8"
-supports "centos", ">= 6.0", "<= 7.0"
+supports "centos", "<= 7.0"
 supports "redhat"
 supports "fedora"
 supports "amazon"
