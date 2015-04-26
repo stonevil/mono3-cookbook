@@ -1,0 +1,33 @@
+---
+driver:
+  name: vagrant
+  customize:
+    memory: 256
+  network:
+  - ["forwarded_port", {guest: 8080, host: 8080}]
+  - ["forwarded_port", {guest: 8181, host: 8181}]
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-12.04
+  - name: ubuntu-14.04
+  - name: debian-7.8
+  - name: debian-8.0
+  - name: centos-6.6
+  - name: centos-7.0
+
+suites:
+- name: package
+  run_list:
+    - recipe[mono3]
+  attributes:
+    mono3:
+      install_method: package
+- name: source
+  run_list:
+    - recipe[mono3]
+  attributes:
+    mono3:
+      install_method: source
