@@ -24,7 +24,7 @@ bash "build_mono" do
   cwd installation_dir
   code <<-EOH
     ./autogen.sh --prefix=/usr/local --with-libgdiplus=/usr/lib/
-    make monolite_url=#{node['mono3']['monolite_url']} get-monolite-latest
+    get-monolite-latest
     make EXTERNAL_MCS=${PWD}/mcs/class/lib/monolite/gmcs.exe
     make install
   EOH
