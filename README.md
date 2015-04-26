@@ -16,7 +16,7 @@ Requirements
 
 Platform:
 
-* Debian 7.8, 8.0
+* Debian 7.8
 * Ubuntu 12.04, 14.04
 * CentOS 7.0
 * RedHat, etc
