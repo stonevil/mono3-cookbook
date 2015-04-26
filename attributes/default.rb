@@ -1,5 +1,5 @@
 default['apt']['compile_time_update'] = true
-default['apt']['periodic_update_min_delay'] = '60'
+# default['apt']['periodic_update_min_delay'] = '60'
 
 default['yum-epel']['repositories'] = %w{epel epel-testing}
 

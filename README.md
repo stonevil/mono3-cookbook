@@ -18,7 +18,7 @@ Platform:
 
 * Debian 7.8, 8.0
 * Ubuntu 12.04, 14.04
-* CentOS 6.6, 7.0
+* CentOS 7.0
 * RedHat, etc
 
 The following cookbooks are dependencies:
