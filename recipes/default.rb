@@ -1,6 +1,6 @@
 include_recipe "mono3::_#{node['platform_family']}"
 
-if platform_family?('rhel')
+if platform_family?('rhel', 'fedora')
   include_recipe 'yum'
   include_recipe 'yum-epel'
 elsif platform_family?('debian')
