@@ -22,3 +22,6 @@ script:
   - bundle exec foodcritic -f any .
   - bundle exec tailor
   - sudo chef-client -z -c client.rb -j dna.json
+  - cp dna-source.json /tmp/dna.json
+  - sudo chef-client -z -c client.rb -j dna.json
+
