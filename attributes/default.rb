@@ -10,8 +10,6 @@ default['mono3']['source']['dependencies'] = %w[
   gettext
 ]
 
-default['mono3']['monolite_url'] = 'http://storage.bos.xamarin.com/mono-dist-master/latest/monolite-130-latest.tar.gz'
-
 default['mono3']['install_method'] = 'package'
 
 default['mono3']['source']['git_uri'] = 'git://github.com/mono/mono.git'

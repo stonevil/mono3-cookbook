@@ -25,7 +25,7 @@ bash "build_mono" do
   code <<-EOH
     ./autogen.sh --prefix=/usr/local --with-libgdiplus=/usr/lib/
     get-monolite-latest
-    make EXTERNAL_MCS=${PWD}/mcs/class/lib/monolite/gmcs.exe
+    make
     make install
   EOH
 end
