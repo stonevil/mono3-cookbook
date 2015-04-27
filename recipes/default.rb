@@ -13,4 +13,6 @@ if node['mono3']['install_method'] == 'source'
   include_recipe 'mono3::_source'
 elsif node['mono3']['install_method'] == 'package'
   package 'mono-complete'
+else
+  raise "Installation method #{node['mono3']['install_method']} not supported"
 end
